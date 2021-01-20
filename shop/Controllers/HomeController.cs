@@ -10,6 +10,7 @@ namespace shop.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Оригинальный Minoxidil 5%, с гарантией результата.";
             return View();
         }
 
@@ -23,6 +24,12 @@ namespace shop.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Order()
+        {
+            ViewBag.Message = "Your order page.";
 
             return View();
         }

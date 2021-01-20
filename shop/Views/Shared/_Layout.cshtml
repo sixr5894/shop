@@ -18,13 +18,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Hydra-shop", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Информация", "About", "Home")</li>
+                    <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Инструкция", "About", "Home")</li>
                     <li>@Html.ActionLink("Связаться", "Contact", "Home")</li>
                 </ul>
             </div>
@@ -32,20 +32,16 @@
         </div>
     </div>
     
-    <div class="row">
-
-        <div class="col-md-6">
-            <img src="~/Content/minox.jpg" class="img-fluid" />
-        </div>
-
-        <div class="col-md-6">
+    <div class="container">
+        <div class="row justify-content-md-center">
             @RenderBody()
         </div>
-
+        <div class="row justify-content-md-center">
+            <img src="~/Content/minox.jpg" />
+        </div>
     </div>
-
     <footer>
-        <p>&copy; @DateTime.Now.Year - мое приложение ASP.NET</p>
+        <p>&copy; @DateTime.Now.Year - hrcn</p>
     </footer>
 
     @Scripts.Render("~/bundles/jquery")
