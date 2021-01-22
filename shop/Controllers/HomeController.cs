@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
 namespace shop.Controllers
 {
     public class HomeController : Controller
@@ -11,6 +10,7 @@ namespace shop.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Оригинальный Minoxidil 5%, с гарантией результата.";
+
             return View();
         }
 
@@ -23,8 +23,7 @@ namespace shop.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = "Contact page";
             return View();
         }
         public ActionResult Order()
